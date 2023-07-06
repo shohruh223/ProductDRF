@@ -152,3 +152,5 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 CORS_ALLOW_ALL_ORIGINS = False  # Hamma domenlarga ruxsat berish (False) yoki faqat etkazib berilganlarga (True)
+
+APPEND_SLASH = False
