@@ -17,7 +17,7 @@ class Product(models.Model):
     title = models.CharField(max_length=255)
     description = models.TextField()
     price = models.DecimalField(max_digits=9, decimal_places=2)
-    capacity = models.IntegerField()
+    capacity = models.CharField(max_length=100)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     category_id = models.ForeignKey(to="app.Category", on_delete=models.CASCADE, related_name='product')
